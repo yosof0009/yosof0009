@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* خطوط مخصصة */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0); /* خلفية متدرجة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px; /* حواف دائرية أكثر */
+    text-align: center;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3); /* ظل أكثر وضوحًا */
+    transition: 0.5s; /* انتقال أطول */
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* تكبير طفيف عند التحويم */
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.5s; /* انتقال أطول */
+}
+
+.profile-picture:hover {
+    transform: scale(1.2); /* تكبير أكبر عند التحويم */
+}
+
+h1 {
+    margin-top: 10px;
+    font-weight: 700; /* خط أكثر سمكًا */
+}
+
+p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 20px; /* مسافة أكبر فوق الروابط */
+}
+
+.social-links .social-link {
+    text-decoration: none;
+    color: #444; /* لون داكن أكثر للروابط */
+    padding: 10px; /* زيادة المسافة الداخلية */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* حواف أكثر دائرية */
+    transition: 0.3s;
+    font-size: 1.2em; /* حجم أكبر للنص */
+}
+
+.social-links .social-link:hover {
+    background-color: #ddd;
+    border-color: #bbb; /* لون حدود مختلف عند التحويم */
+    transform: scale(1.1); /* تكبير طفيف عند التحويم */
+}
+
+.social-links .twitter:before {
+    content: "\f099"; /* أيقونة تويتر */
+}
+
+.social-links .instagram:before {
+    content: "\f16d"; /* أيقونة إنستغرام */
+}
+
+.social-links .linkedin:before {
+    content: "\f0e1"; /* أيقونة لينكد إن */
+}
+
